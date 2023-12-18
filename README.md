@@ -1,5 +1,4 @@
-# SisamonMarquezD01
-# Flutter Project 01
+# Flutter Project 01 - SisamonMarquezD01
 
 This Flutter project aims to create a replica following the given instructions. The main objectives are as follows:
 
