@@ -23,8 +23,8 @@ Additional widgets not covered in class have been incorporated, and their usage 
 
 - **Description:** The first screen includes a navigation bar and two components.
 - **Components:**
-  1. Text
-  2. Button
+  - Text
+  - Button
 ![Screen 1](screen1.png)
 #### Screen 2: Counter with Buttons
 
