@@ -1,8 +1,6 @@
 # SisamonMarquezD01
 # Flutter Project
 
-## EJERCICIO 01
-
 This Flutter project aims to create a replica following the given instructions. The main objectives are as follows:
 
 ### Project Structure
