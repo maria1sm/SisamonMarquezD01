@@ -20,6 +20,7 @@ class Componente1 extends StatelessWidget {
                 textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 46,
+                  color: Colors.black,
                 ),
               ),
             ),
@@ -27,7 +28,7 @@ class Componente1 extends StatelessWidget {
           Text(
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
             textAlign: TextAlign.start,
-            style: TextStyle(fontSize: 26),
+            style: TextStyle(fontSize: 26, color: Colors.black),
           )
         ],
       ),

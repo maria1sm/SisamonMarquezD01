@@ -43,13 +43,16 @@ class Contador extends StatelessWidget {
                         ),
                       ),
                     ),
-                    child: Text(
-                      "-1",
-                      textAlign: TextAlign.start,
-                      style: TextStyle(
-                          fontSize: 40,
-                          fontWeight: FontWeight.w100,
-                          color: Colors.white),
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        "-1",
+                        textAlign: TextAlign.start,
+                        style: GoogleFonts.roboto(
+                          textStyle:
+                              TextStyle(fontSize: 45, color: Colors.white),
+                        ),
+                      ),
                     ),
                   ),
                   ElevatedButton(
@@ -65,7 +68,10 @@ class Contador extends StatelessWidget {
                         ),
                       ),
                     ),
-                    child: Icon(Icons.refresh),
+                    child: Icon(
+                      size: 40,
+                      Icons.refresh,
+                    ),
                   ),
                   ElevatedButton(
                     onPressed: () {},
@@ -80,13 +86,16 @@ class Contador extends StatelessWidget {
                         ),
                       ),
                     ),
-                    child: Text(
-                      "+1",
-                      textAlign: TextAlign.start,
-                      style: TextStyle(
-                          fontSize: 40,
-                          fontWeight: FontWeight.w100,
-                          color: Colors.white),
+                    child: Padding(
+                      padding: const EdgeInsets.all(5.0),
+                      child: Text(
+                        "+1",
+                        textAlign: TextAlign.start,
+                        style: GoogleFonts.roboto(
+                          textStyle:
+                              TextStyle(fontSize: 45, color: Colors.white),
+                        ),
+                      ),
                     ),
                   ),
                 ],

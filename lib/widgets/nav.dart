@@ -20,35 +20,45 @@ class Nav extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              FlutterLogo(
-                size: 80,
-                style: FlutterLogoStyle.markOnly,
+              Padding(
+                padding: EdgeInsets.only(bottom: 12.0),
+                child: FlutterLogo(
+                  size: 100,
+                  style: FlutterLogoStyle.markOnly,
+                ),
               ),
               Text(
                 "Flutter",
-                style: TextStyle(fontSize: 32),
+                style: TextStyle(fontSize: 45, color: Colors.black),
               ),
             ],
           ),
           Container(
-            width: 300,
+            width: 450,
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
                   "Inicio",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 25, color: Colors.black),
                 ),
                 Text(
                   "Widgets",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 25, color: Colors.black),
                 ),
                 Text(
                   "About",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 25, color: Colors.black),
                 ),
-                Icon(Icons.search),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 5.0),
+                  child: Icon(
+                    Icons.search,
+                    size: 40,
+                    color: Color.fromARGB(255, 98, 98, 98),
+                  ),
+                ),
               ],
             ),
           ),
