@@ -5,67 +5,79 @@ class Nav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(
-        top: 16.0,
-        bottom: 16.0,
-        left: 220.0,
-        right: 220.0,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          const Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Padding(
-                padding: EdgeInsets.only(bottom: 12.0),
-                child: FlutterLogo(
-                  size: 100,
-                  style: FlutterLogoStyle.markOnly,
+    return Container(
+      constraints: BoxConstraints(minWidth: 500, maxWidth: 1075),
+      child: Padding(
+        padding: const EdgeInsets.only(
+          top: 16.0,
+          bottom: 16.0,
+          //left: 120.0,
+          //right: 120.0,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            const Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(bottom: 12.0),
+                  child: FlutterLogo(
+                    size: 100,
+                    style: FlutterLogoStyle.markOnly,
+                  ),
+                ),
+                Text(
+                  "Flutter",
+                  style: TextStyle(fontSize: 45, color: Colors.black),
+                ),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0),
+              child: Container(
+                width: 450,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    GestureDetector(
+                      onTap: () => Navigator.pushNamed(context, '/home'),
+                      child: Text(
+                        "Inicio",
+                        style: TextStyle(fontSize: 25, color: Colors.black),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () => Navigator.pushNamed(context, '/widgets'),
+                      child: Text(
+                        "Widgets",
+                        style: TextStyle(fontSize: 25, color: Colors.black),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: () => Navigator.pushNamed(context, '/about'),
+                      child: Text(
+                        "About",
+                        style: TextStyle(fontSize: 25, color: Colors.black),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 5.0),
+                      child: Icon(
+                        Icons.search,
+                        size: 40,
+                        color: Color.fromARGB(255, 98, 98, 98),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-              Text(
-                "Flutter",
-                style: TextStyle(fontSize: 45, color: Colors.black),
-              ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8.0),
-            child: Container(
-              width: 450,
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Text(
-                    "Inicio",
-                    style: TextStyle(fontSize: 25, color: Colors.black),
-                  ),
-                  Text(
-                    "Widgets",
-                    style: TextStyle(fontSize: 25, color: Colors.black),
-                  ),
-                  Text(
-                    "About",
-                    style: TextStyle(fontSize: 25, color: Colors.black),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(bottom: 5.0),
-                    child: Icon(
-                      Icons.search,
-                      size: 40,
-                      color: Color.fromARGB(255, 98, 98, 98),
-                    ),
-                  ),
-                ],
-              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
